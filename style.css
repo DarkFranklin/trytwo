@@ -1,0 +1,80 @@
+body {
+	background: url(asanoha-400px.png)  repeat;
+	text-transform: uppercase;
+	font-family: "Arial black", sans-serif;
+}
+.nav {
+	list-style: none;
+	padding: 0;
+	margin: 30px;
+	opacity: .5;
+}
+.nav:hover {
+	opacity: 1;
+}
+.nav li {
+	height: 50px;
+	width: 50px;
+	overflow: hidden;
+}
+.nav li:hover {
+	width: 200px;
+	height: 175px;
+	transition: all 0.2s ease-out;
+}
+.nav li a {
+	display: block;
+	width: 200px;
+	height: 40px;
+	line-height: 40px;
+	background: #000;
+	margin: 1px;
+	color: #fff;
+	padding-left: 15px;
+	cursor: pointer;
+	text-decoration: none;
+	opacity: .5;
+}
+.nav li a:hover {
+	background: deepskyblue;
+	
+	opacity: 1;
+	width: 200px;
+	transition: all .2s linear;
+
+}
+.nav li a:first-child {
+	font-size: 1.1em;
+	height: 50px;
+	line-height: 50px;
+	position: relative;
+	text-indent: 36px;
+
+}
+.nav li a:first-child::before {
+	content: '';
+	position: absolute;
+	display: block;
+	height: 32px;
+	width: 32px;
+	top: 9px;
+	left: 9px;
+	
+}
+.nav li a:first-child::before {
+	background: url(Home.png) center no-repeat;
+	background-size: 32px 32px;
+}
+.nav .shop a:first-child::before {
+	background: url(Cart.png) center no-repeat;
+	background-size: 32px 32px;
+}
+.nav .profile a:first-child::before {
+	background: url(List.png) center no-repeat;
+	background-size: 32px 32px;
+}
+.nav .settings a:first-child::before {
+	background: url(Work.png) center no-repeat;
+	background-size: 32px 32px;
+}
+
